@@ -1,0 +1,32 @@
+---
+title: "Lista de Calificaciones de materias"
+author: "César Augusto Ávila González"
+date: "29 de agosto de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Primer Semestre
+
+1.- Programacion Actuarial I	09
+
+2.-	DHPC	09
+
+3.-Conceptos de Calculo	10
+
+4.-Matematicas Basicas	07
+
+5.-	Problemas de Mat. Basicas	07
+
+## Segundo Semestre
+
+1.- Programacion Actuarial II	06
+
+2.- Teoria del Interes I	07
+
+3.- Formacion Humana y Social	09
+
+4.- Calculo Diferencial	06
