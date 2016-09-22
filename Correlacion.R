@@ -14,4 +14,4 @@ Correlacion<-function(directorio, horizonte=0){
   corre
 }
  Correlacion("specdata", 1)
- head(Correlacion("specdata",400))
+
