@@ -1,0 +1,29 @@
+---
+title: "Codebook"
+author: "Equipo de Programacion III"
+date: "14 de diciembre de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Code Book
+
+Las caracteristicas de este data frame provinieron de de la transformacion de los datos de ???Human Activity Recognition Using Smartphones Datase???, estos datos fueron obtenidos de experimentos con un grupo de 30 voluntarios con una de entre 19-48 a??os, los voluntarios realizaron seis actividades(caminando, subiendo escaleras, bajando escaleras, sentarse, de pie, acostados) usando un telefono inteligente (Samsung Galaxy S II) en la cintura, gracias a la incorporaci??n de distintos artefanctos se capturaron las velocidades y aceleraciones, para esto se usaron se??ales (tAcc-XYZ y tGyro-XYZ).
+
+Las senales fueron usadas para estimar las variables de la caracterisitcas de cada vector, ???XYZ??? son usados para denotar los tres ejes de cada direccion.
+
+tBodyAcc-XYZ tGravityAcc-XYZ tBodyAccJerk-XYZ tBodyGyro-XYZ tBodyGyroJerk-XYZ tBodyAccMag tGravityAccMag tBodyAccJerkMag tBodyGyroMag tBodyGyroJerkMag fBodyAcc-XYZ fBodyAccJerk-XYZ fBodyGyro-XYZ fBodyAccMag fBodyAccJerkMag fBodyGyroMag fBodyGyroJerkMag
+
+##Caracteristicas de los vectores
+mean(): media de los valores de las multiples medidas de las variables originales. Dominio: Reales
+
+std(): Se trata de la desviacion estandar de las multiples medidas de las variables originales.
+
+activity_id: identificador de actividades de cada tema. Domino: [1:6] en los Enteros.
+
+activity_name: Da los nombres de cada actividad. Domino: caracteres.
+
+subject_id: Identificador de cada tema. Dominio: [1:30] en los enteros. `

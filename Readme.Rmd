@@ -1,7 +1,7 @@
 ---
 title: "Readme"
 author: "Equipo de Programaci??n III"
-date: "13 de diciembre de 2016"
+date: "14 de diciembre de 2016"
 output: html_document
 ---
 
@@ -46,6 +46,7 @@ Utilizando la funci??n "grep", se extraen todas las columnas con los valores mea
 Usando la funci??n "merge", los nombres de actividades descriptivas se combinan con el conjunto de datos de valores mean/ std, para obtener un conjunto de datos con nombres de actividad descriptivas
 
 Por ultimo, con la ayuda de las funciones "melt" y "dcast" del paquete "reshape2", los datos se convierten en una tabla que contiene valores medios de todas las caracteristicas incluidas
+
 
 
 
