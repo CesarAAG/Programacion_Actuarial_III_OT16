@@ -1,0 +1,51 @@
+---
+title: "Readme"
+author: "Equipo de Programaci??n III"
+date: "13 de diciembre de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Explicaci??n
+
+El codigo "correr_analisis" lee los datos de "Human Activity Recognition Using Smartphones Dataset" y genera un nuevo conjunto de datos ordenado, que ademas puede ser usado para un alisis mas extenso
+
+
+
+## El conjunto de datos originales incluia los siguiento datos:
+
+'features.txt': Lista de caracteristicas
+
+'activity_labels.txt': List del nombre de las actividades y sus actvidades.
+
+'train/X_train.txt': Conjunto de entrenamiento.
+
+'train/y_train.txt': Etiquetas de entremamiento.
+
+'train/subject_train.txt': ID's de los temas de training data
+
+'test/X_test.txt': Cojunto de pruebas.
+
+'test/y_test.txt': Etiquetas de pruebas.
+
+'test/subject_test.txt': ID's de los temas de training data
+
+## Descripcion del codigo
+
+Primero comprueba si se tiene instalado "reshape2" y despu??s carga el paquete "reshape2".
+
+A continuacion, lee todos los archivos .txt necesarios y las etiquetas de los conjuntos de datos.
+
+En consecuencia, los "activity_id" y "subject_id" se a??aden a los datos "test" y "training", que luego se combinan en un unico data frame.
+
+Utilizando la funci??n "grep", se extraen todas las columnas con los valores mean () y std () y luego un nuevo data frame, incluyendo solo las columnas "activity_id", "subject_id" y media () y std () es creado
+
+Usando la funci??n "merge", los nombres de actividades descriptivas se combinan con el conjunto de datos de valores mean/ std, para obtener un conjunto de datos con nombres de actividad descriptivas
+
+Por ultimo, con la ayuda de las funciones "melt" y "dcast" del paquete "reshape2", los datos se convierten en una tabla que contiene valores medios de todas las caracteristicas incluidas
+
+
+
